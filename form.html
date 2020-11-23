@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay IT Forward Form</title>
+    <link rel="stylesheet" href="form.css" type="text/css">
+</head>
+
+<body>
+    <h1 id="title">Pay IT Forward guruhiga xush kelibsiz!</h1>
+    <p id="description">Ushbu formani to'ldirib, jamoamizga qo'shiling va front-end dasturchilikka oid bepul saboqlar
+        oling!</p>
+    <form action="mailto:ganijanovich94@gmail.com" id="survey-form">
+        <div>
+            <label for="name">
+                Ismingiz:
+                <input type="text" name="ism" id="name" placeholder="Ismingizni kiriting" required>
+            </label>
+        </div>
+        <div>
+            <label for="email">
+                Emailingiz:
+                <input type="mail" name="email" id="email" placeholder="Emailingiz kiriting" required>
+            </label>
+        </div>
+        <div>
+            <label for="number">
+                Yoshingiz:
+                <input type="number" name="yosh" id="number" placeholder="Yoshingiz">
+            </label>
+        </div>
+        <div>
+            <label for="dropdown">
+                Faoliyatingiz: <select id="dropdown" name="faoliyat">
+                    <option value="o'quvchi">Maktab o'quvchisi</option>
+                    <option value="abituriyent">Abituriyent</option>
+                    <option value="talaba">Talaba</option>
+                    <option value="o'qituvchi">O'qituvchi</option>
+                    <option value="tadbirkor">Tadbirkor</option>
+                    <option value="ishsiz">Ishsiz</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <p>Ushbu guruhga qo'shilishdan maqsadingiz:</p>
+            <label for="purpose">
+                <input type="radio" id="purpose1" name="purpose" value="1" checked>Yetuk dasturchi bo'lish
+            </label>
+            <label for="purpose">
+                <input type="radio" id="purpose2" name="purpose" value="2">Hobbiy uchun o'rganish
+            </label>
+        </div>
+        <div>
+            <p>Qaysi xorijiy tillarni bilasiz?</p>
+            <label for="language">
+                <select name="language" id="language">
+                    <option value="Ingliz">Ingliz</option>
+                    <option value="Rus">Rus</option>
+                    <option value="Xitoy">Xitoy</option>
+                    <option value="Arab">Arab</option>
+                    <option value="Ispna">Ispan</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <p>Ushbu saytlardan qaysilarini bilasiz? <span>Bir nechtasini tanlashingiz mumkin.</span></p>
+            <label for="codecademy">
+                <input type="checkbox" name="sites" id="codecademy" value="codecademy">CodeCademy.com
+            </label>
+            <br>
+            <label for="freecodecamp">
+                <input type="checkbox" name="sites" id="freecodecamp" value="freecodecamp">freeCodeCamp.org
+            </label>
+            <br>
+            <label for="udemy">
+                <input type="checkbox" name="sites" id="udemy" value="udemy">Udemy.com
+            </label>
+            <br>
+            <label for="udacity">
+                <input type="checkbox" name="sites" id="udacity" value="udacity">Udacity.com
+            </label>
+            <br>
+            <label for="code">
+                <input type="checkbox" name="sites" id="code" value="code">Code.org
+            </label>
+        </div>
+        <div>
+            <label for="additional-info">Ushbu guruhdan nimalar kutyapiz?
+                <br>
+                <textarea name="additional-info" id="additional-info" cols="40" rows="5"
+                    placeholder="Fikringizni yozing"></textarea>
+            </label>
+        </div>
+
+        <input type="submit" value="Submit">
+
+
+
+    </form>
+
+</body>
+
+</html>
