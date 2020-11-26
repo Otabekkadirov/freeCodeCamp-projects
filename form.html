@@ -9,10 +9,11 @@
 </head>
 
 <body>
+    <div class="blur"></div>
     <h1 id="title">Pay IT Forward guruhiga xush kelibsiz!</h1>
     <p id="description">Ushbu formani to'ldirib, jamoamizga qo'shiling va front-end dasturchilikka oid bepul saboqlar
         oling!</p>
-    <form action="mailto:ganijanovich94@gmail.com" id="survey-form">
+    <form action="mailto:ganijanovich94@gmail.com" id="survey-form" method="POST">
         <div>
             <label for="name">
                 Ismingiz:
@@ -22,7 +23,7 @@
         <div>
             <label for="email">
                 Emailingiz:
-                <input type="mail" name="email" id="email" placeholder="Emailingiz kiriting" required>
+                <input type="email" name="email" id="email" placeholder="Emailingiz kiriting" required>
             </label>
         </div>
         <div>
@@ -48,6 +49,7 @@
             <label for="purpose">
                 <input type="radio" id="purpose1" name="purpose" value="1" checked>Yetuk dasturchi bo'lish
             </label>
+            <br>
             <label for="purpose">
                 <input type="radio" id="purpose2" name="purpose" value="2">Hobbiy uchun o'rganish
             </label>
@@ -64,8 +66,8 @@
                 </select>
             </label>
         </div>
-        <div>
-            <p>Ushbu saytlardan qaysilarini bilasiz? <span>Bir nechtasini tanlashingiz mumkin.</span></p>
+        <div class="sites-list">
+            <p>Ushbu saytlardan qaysilarini bilasiz? <span>(Bir nechtasini tanlashingiz mumkin.)</span></p>
             <label for="codecademy">
                 <input type="checkbox" name="sites" id="codecademy" value="codecademy">CodeCademy.com
             </label>
@@ -89,12 +91,11 @@
         <div>
             <label for="additional-info">Ushbu guruhdan nimalar kutyapiz?
                 <br>
-                <textarea name="additional-info" id="additional-info" cols="40" rows="5"
-                    placeholder="Fikringizni yozing"></textarea>
+                <textarea name="additional-info" id="additional-info" placeholder="Fikringizni yozing"></textarea>
             </label>
         </div>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" id="submit">
 
 
 
