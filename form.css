@@ -29,6 +29,7 @@ body {
     text-align: center;
     width: 100%;
     font-size: 36px;
+    text-shadow: 5px 10px 10px rgba(29, 34, 59, 0.924);
 }
 #description {
     color: rgba(255, 255, 255, .9);
